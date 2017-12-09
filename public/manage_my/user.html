@@ -137,6 +137,34 @@
 </html>
 <script src="./lib/jquery/jquery.min.js"></script>
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+<!-- 引入模板引擎 -->
+<script src="./lib/artTemplate/template.js"></script>
+<!-- 模板 -->
+<script type="text/html" id="user">
+    {{each rows}}
+        <tr>
+            <th scope="row">{{(page-1)*size+$index+1}}</th>
+            <td>{{$value.username}}</td>
+            <td>{{$value.mobile}}</td>
+            <td>
+                {{if $value.isDelete==1 }}
+                    正常
+                {{else}}
+                    已禁用
+                {{/if}}        
+            </td>
+            <td>
+                {{if $value.isDelete==1 }}
+                <button class="btn btn-danger">禁用</button>
+                {{else}}
+                <button class="btn btn-primary">启用</button>
+                {{/if}} 
+                <!-- <button class="btn btn-danger">禁用</button> -->
+            </td>
+        </tr>
+    {{/each}}
+</script>
+<!-- 引入分页插件 -->
 
 <script src="./js/common.js"></script>
 <script src="./js/user.js"></script>
