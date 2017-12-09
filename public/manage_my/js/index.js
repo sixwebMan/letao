@@ -65,5 +65,7 @@ $(function () {
             }
         ]
     };
-    myChartRight.setOption( optionRight);
+    myChartRight.setOption(optionRight);
+
+    
 })
