@@ -2,7 +2,6 @@ $(function () {
     var pageNum = 1;
     var pageSize = 5;
 
-
     function getData() {
         $.ajax({
             url: '/user/queryUser',
