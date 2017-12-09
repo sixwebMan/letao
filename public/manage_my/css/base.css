@@ -20,6 +20,12 @@ html,
 body {
     height: 100%;
 }
+
+.mb_30{
+    margin-bottom: 30px;
+}
+
+
 /* 左侧栏目样式 */
 .ad_aside{
     width: 180px;
