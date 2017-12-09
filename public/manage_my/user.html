@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./lib/echarts/echarts.min.js">
     <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/user.css">
     <title>Document</title>
 </head>
 
@@ -62,16 +62,39 @@
         <div class="navigation">
             <ol class="breadcrumb">
                 <li>
-                    <a href="#">管理系统</a>
+                    <a href="./index.html">管理系统</a>
                 </li>
                 <li>
-                    <span href="#">首页</span>
+                    <span href="#">用户管理</span>
                 </li>
             </ol>
+            <!-- 表格 -->
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>用户名</th>
+                        <th>手机号</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>itcast</td>
+                        <td>18888888888</td>
+                        <td>正常</td>
+                        <td>
+                            <button class="btn btn-danger">禁用</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
-        <!-- 图表 -->
-        
+
+
 
     </div>
 
@@ -97,7 +120,8 @@
                     <h4 class="modal-title">温馨提示</h4>
                 </div>
                 <div class="modal-body text-danger">
-                    <p><span class="glyphicon glyphicon-info-sign"></span>您确定要退出管理系统吗?</p>
+                    <p>
+                        <span class="glyphicon glyphicon-info-sign"></span>您确定要退出管理系统吗?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
